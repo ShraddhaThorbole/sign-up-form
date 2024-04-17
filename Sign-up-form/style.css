@@ -1,0 +1,196 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+	font-family: 'Norse Bold';
+	src: url(assets/Norse-Bold.otf); 
+}
+  
+  
+html, body, h1, p {
+	margin: 0px;
+	padding: 0px;
+}
+  
+:root {
+	--background-width: min(40vw, 640px);
+	--main-width: calc(100vw - var(--background-width));
+}
+  
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+  
+  
+body {
+	display: flex;
+	min-height: 100vh;
+}
+  
+  
+.left-section {
+	position: fixed;
+	background-image: url(assets/img.jpg);
+	background-size: cover;
+	height: 100vh;
+	width: var(--background-width);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+  
+.logo-container {
+	height: 90vh;
+}
+  
+  .logo {
+	margin-top: 20vh;
+	background-color: rgba(0, 0, 0, 0.39);
+	text-align: center;
+	padding: 10px;
+  }
+  .logo span {
+	font-family: 'Norse Bold', sans-serif;
+	font-size: 2.6em;
+	vertical-align: middle;
+	font-weight: normal;
+	color: white;
+  }
+  
+  .logo img {
+	height: 100px;
+	width: auto;
+	display: inline;
+	vertical-align: middle;
+  }
+    
+  main {
+	width: var(--main-width);
+	margin-left: var(--background-width);
+	padding-top: 15vh;
+	background-color: whitesmoke;
+  }
+  
+  main > div {
+	padding-left: 35px;
+  }
+  
+  
+  .text{
+	padding-right: 50px;
+	margin-bottom: 50px;
+  }
+  
+  .text p {
+	max-width: 600px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 1.2em;
+  }
+  
+  
+  form {
+	background-color: white;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.112);
+	padding: 15px 30px;
+  }
+  
+  form h1 {
+	color: rgb(61, 61, 61);
+	font-size: 1.5em;
+	margin-bottom: 20px;  
+  }
+  
+  .form-inputs {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 50px;
+  }
+  
+  .form-inputs div {
+	flex-basis: 40%;
+	min-width: 165px;
+	max-width: 300px;
+  }
+  
+  .inputs {
+	margin-bottom: 20px;
+	width: 100%;
+  }
+  
+  .inputs label {
+	display: block;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: rgb(83, 83, 83);
+	letter-spacing: 1.5px;
+  }
+  
+  .inputs input {
+	width: 100%;
+	max-width: 300px;
+	height: 25px;
+	border: 2px solid #E5E7EB;
+	border-radius: 4px;
+  }
+  
+  .inputs input:focus {
+	outline: none;
+	border: 2px solid #149ceb;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.185);
+  }
+  
+  /* Password Validation */
+  
+  .error+span {
+	color: #dd1313;
+	font-size: 0.7em;
+  }
+  
+  input.error {
+	border: 2px solid #dd1313;
+  }
+  
+  input.valid {
+	border: 2px solid #13dd13;
+  }
+  
+  .footer{
+	margin-top: 30px;
+  }
+  
+  .footer button {
+	background-color: #596D48;
+	color: white;
+	font-size: 1em;
+	font-weight: bold;
+	border: none;
+	padding: 10px 35px;
+	border-radius: 6px;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.312);
+  }
+  
+  .footer button:hover {
+	background-color: #7c9665;
+	cursor: pointer;
+  }
+  
+  .footer button:active {
+	transform: translateY(1px);
+  }
+  
+  .footer div {
+	margin-top: 30px;
+  }
+  
+  .footer:last-child {
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 20px;
+  }
+  
+  .footer{
+	text-decoration: none;
+	color: #596D48;
+  }
